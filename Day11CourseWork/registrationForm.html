@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REgistration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="">Register</h1>
+        <div class="row">
+    <form action="" class="form-group">
+       
+        <label for="fname" class="form-label">First Name</label>
+        <input class="form-control" type="text" name="fname" id="" placeholder="first name" required min="3">
+        <label for="lname" class="form-label">Last Name</label>
+        <input class="form-control" type="text" name="lname" id="" placeholder="Last name" required min="3">
+        <label class="form-label" for="username">Username</label>
+        <input class="form-control" type="text" name="username" id="" placeholder="username" required min="3">
+        <label for="email" class="form-label ">Email</label>
+        <input class="form-control" type="email" name="email" id=""  placeholder="email" required min="3" pattern="([A-Za-z_]+@gmail\.[a-zA-z]{2,})$">
+        <label for="password"  class="form-label">Password</label>
+        <input class="form-control" type="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" id="" placeholder="password" required min="8">
+        <label for="cpassword"  class="form-label">Confirm Password</label>
+        <input class="form-control" type="cpassword" name="cpassword" id=""  pattern="^[A-Z][a-z][0-9]+@$" placeholder="confirm password" required min="8">
+        <label for="Qualification" class="form-label">Qualification</label>
+        <select class="form-select" name="Qualification" id="Qualification" required>
+            <option value="" disabled selected>Select your qualification</option>
+            <option value="qual">B.TECH/B.E</option>
+            <option value="qual">M.TECH</option>
+            <option value="qual">Diploma</option>
+        </select>
+        <label for="mobile" class="form-label">Mobile</label>
+        <input type="number" name="mobile" id="" required placeholder="mobile" min="10">
+
+        <fieldset>
+            <legend class="form-label">Gender</legend>
+            <input class="form-check-input" type="radio" name="gender" id="">
+            <label class="form-check-label" for="gender">Male</label><br>
+            <input class="form-check-input" type="radio" name="gender" id="">
+            <label class="form-check-label" for="gender">Female</label><br>
+            <input class="form-check-input" type="radio" name="gender" id="">
+            <label class="form-check-label" for="gender">Other</label>
+        </fieldset>
+
+
+        <label for="dob" class="form-label">Date of Birth</label>
+        <input class="form-control" type="date" name="dob" id="dob" required>
+
+         
+        <fieldset>
+            <legend class="form-label">Skill Set</legend>
+            <input class="form-check-input" type="checkbox" name="react.js" id="">
+            <label class="form-check-label" for="react.js">React.js</label><br>
+            <input class="form-check-input" type="checkbox" name="node.js" id="">
+            <label class="form-check-label" for="node.js">Node.js</label><br>
+            <input class="form-check-input" type="checkbox" name="java" id="">
+            <label class="form-check-label" for="java">Java</label>
+            <input class="form-check-input" type="checkbox" name="mysql" id="">
+            <label class="form-check-label" for="mysql">MySQL</label>
+            <input class="form-check-input" type="checkbox" name="mongodb" id="">
+            <label class="form-check-label" for="mongodb">MongoDB</label>
+        </fieldset>
+         
+        <label for="address" class="form-label">Address</label>
+        <textarea class="form-control" name="address" id="address" rows="3" placeholder="Your address" required></textarea>
+
+        <label for="photo" class="form-label">Photo</label>
+        <input class="form-control" type="file" name="photo" id="">
+
+
+        <label for="profile" class="form-label">Profile</label>
+        <input class="form-control" type="file" name="profile" id="profile" accept=".pdf, .doc, .docx" required>
+        <small class="form-text text-muted">Upload your resume (PDF, DOC, or DOCX format).</small>
+
+          <br>
+          <br>
+          
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-warning" type="reset">Reset</button>
+       
+        
+    </form>
+</div>
+    </div>
+</body>
+</html>
