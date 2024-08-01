@@ -1,0 +1,31 @@
+console.log(Math.pow(3,4));
+console.log(Math.sqrt(9));
+console.log(Math.floor(0.1));
+console.log(Math.ceil(0.1));
+console.log(Math.round(0.4));
+console.log(Math.random());
+let str='welcome';
+console.log(str.length);
+console.log(str.toLowerCase);
+console.log(str.toUpperCase);
+str="hello world"
+console.log(str.split(" ").length);
+console.log(str.search("world"));
+console.log(str.concat(" harsha"));
+console.log(str.slice3,6);
+console.log(new Date());
+let myDate=new Date();
+console.log(myDate.setDate());
+let strDate='2020-06-12'
+console.log(new Date(strDate));
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();
+console.log();

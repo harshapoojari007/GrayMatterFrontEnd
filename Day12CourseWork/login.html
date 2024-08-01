@@ -21,11 +21,11 @@
                 <form action="" class="form-group">
                     <h1>Login</h1>
                     <label class="form-label" for="username">Username</label>
-                    <input class="form-control" type="text" name="username" id="" placeholder="username" required>
+                    <input class="form-control" type="text" name="username" id="username" placeholder="username" required>
                     <label class="form-label" for="password">Password</label>
-                    <input class="form-control" type="password" name="password" id="" placeholder="password" required>
+                    <input class="form-control" type="password" name="password" id="password" placeholder="password" required>
             
-                    <div class="btn btn-outline-primary">Login</div>
+                    <div class="btn btn-outline-primary" onclick="auth()">Login</div>
                 </form>
             </div>
            </div>
@@ -33,5 +33,19 @@
 
     </div>
 
+
+
+    <script>
+          const auth=()=>{
+            let username=document.getElementById('username').value;
+            let password=document.getElementById('password').value;
+            if(username==="Harsha" && password==="12345")
+            {
+            alert("Successfully logged in")
+            }else{
+                alert("Invalid Credentials")
+            }
+          }
+    </script>
 </body>
 </html>

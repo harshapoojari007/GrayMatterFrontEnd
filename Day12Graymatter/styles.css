@@ -1,0 +1,172 @@
+h,p{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    font-size: 12px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.hdiv{
+    display: flex;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%; margin-right: 5%;
+}
+
+.navdiv{
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-right:18px;
+}
+.navul{
+    margin-top: 20px;
+display: flex;
+
+
+}
+
+
+footer{
+    background-color: black;
+    color:white;
+    padding:20px 200px;
+    font-size: small;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.thirdDiv{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    color:rgb(59, 59, 59);
+    margin-top: 50px;
+   
+}
+
+.product{
+    margin-bottom: 50px;
+}
+.products{
+
+    padding: 10px;
+    width: 150px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 8px 10px -7px;
+    /* border-bottom:1px solid black;
+    border-right:1px solid black;
+    border-left:1px solid black; */
+    position: absolute;
+    top: 0;
+    margin-left: 60px;
+    background-color: white;
+    font-weight: bolder;
+    color: rgb(107, 106, 106);
+    
+
+}
+
+.subtitle{
+    color: rgb(0, 183, 255);
+}
+
+.productbutton{
+    
+position:absolute;
+bottom: -25px;
+left:29%;
+color: #FB7305;
+border:2px #FB7305 solid;
+background-color: white;
+font-size: medium;
+}
+
+.productbutton:hover{
+    color: white;
+    background-color: #FB7305;
+}
+
+.productDiv{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.card{
+    border-radius: 15px;
+    background-image: linear-gradient(rgb(234, 242, 245),rgb(255, 255, 255),white);
+    border:none;
+    box-shadow: 0px 6px 10px -7px;  
+    margin-bottom: 30px;
+}
+
+
+.contact{
+    background-color: #FB7305;
+    color:white;
+    padding:5px 20px;
+    font-size: medium;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    margin-right: -50px;
+    bottom: 50%;
+    width: 10%;
+    transform: rotate(-90deg);
+}
+
+
+.footerDiv{
+    margin-bottom: 50px;
+    background-color: #323639;
+    padding: 20px;
+    padding-left: 100px;
+}
+
+
+.foots1 div{
+    color: white;
+font-weight: bold;
+border-bottom: 1px white solid;
+margin: 15px;
+}
+.foots1 div button{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    color: white;
+    background-color: #181a1b;
+    border-radius: 1px;
+    border: none;
+}
+
+.foots1 div:hover{
+    color:#FB7305;
+    
+}
+
+.foots1 div button:hover{
+background-color: #FB7305;
+}

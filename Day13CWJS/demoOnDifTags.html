@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="skilss">Skill Set</label>
+        <input type="checkbox" name="skill" value="C">C
+        <input type="checkbox" name="skill" value="C++++">C
+        <input type="checkbox" name="skill" value="Java">Java
+        <input type="checkbox" name="skill" value="C#">C#
+        <input type="checkbox" name="skill" value="C++">C++
+        <button type="button" onclick="readCheckBoxes()">Submit</button>
+    </form>
+
+    <form action="">
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+        <button type="button" onclick="readRadioBoxes()">Submit</button>
+    </form>
+
+    <form action="">
+        <label for="Qualification" class="form-label">Qualification</label>
+        <select name="Qualification" class="qual" id="Qualification" required>
+            <option value="" class="qual" disabled selected>Select your qualification</option>
+            <option value="qual" class="qual">B.TECH/B.E</option>
+            <option value="qual" class="qual">M.TECH</option>
+            <option value="qual" class="qual">Diploma</option>
+           
+
+        </select>
+        <button type="button" onclick="selectedBoxes()">Submit</button>
+    </form>
+
+
+    <script>
+        const readCheckBoxes=()=>{
+            let checkbox=document.getElementsByName('skill');
+
+        //     for(var i=0;i<checkbox.length;i++)
+        // {
+        //     if(checkbox[i].checked)
+        //     console.log(checkbox[i].value);
+        // }
+        let checkboxes=Array.from(checkbox)
+        checkboxes.filter(i=>i.checked).forEach(i=>console.log(i.value))
+        }
+        const readRadioBoxes=()=>{
+            let radio=document.getElementsByName('gender');
+        let radios=Array.from(radio)
+        radios.filter(i=>i.checked).forEach(i=>console.log(i.value))
+        }
+
+        const selectedBoxes=()=>{
+            let selected=document.getElementsByClassName('qual');
+        let selects=Array.from(selected)
+        selects.filter(i=>i.selected).forEach(i=>console.log(i.innerText))
+        }
+        
+    </script>
+</body>
+</html>
